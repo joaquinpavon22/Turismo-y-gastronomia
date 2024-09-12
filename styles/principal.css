@@ -1,0 +1,17 @@
+.carousel-item{
+    position: relative;
+}
+
+.card-container{
+    justify-content: center;
+    align-content: center;
+}
+
+@media (max-width:500px){
+    .carousel-caption{
+        position: absolute;
+        bottom: -60px;
+    }
+}
+
+

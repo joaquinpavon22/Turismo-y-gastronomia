@@ -1,0 +1,27 @@
+.navbar{
+    max-height: 100px;
+}
+.navbar-nav{
+    flex-grow: 1;
+    justify-content: center;
+}
+.navbar-brand{
+    margin-right: auto;
+}
+
+.form-control{
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .navbar-nav {
+      flex-direction: column;
+      align-items: center;
+    }
+    .navbar{
+        max-height: 200px;
+    }
+
+ }
+

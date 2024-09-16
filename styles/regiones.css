@@ -1,0 +1,36 @@
+.gallery-item {
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+  }
+
+  .gallery-item img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+  .gallery-text > p {
+    font-weight: bold;
+  }
+
+  .gallery-item .gallery-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  .gallery-item:hover .gallery-text {
+    opacity: 1;
+  }

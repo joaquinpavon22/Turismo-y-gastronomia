@@ -1,5 +1,10 @@
 .navbar{
     max-height: 100px;
+    z-index: 10000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 .navbar-nav{
     flex-grow: 1;
@@ -14,14 +19,21 @@
 }
 
 
+
 @media (max-width: 768px) {
     .navbar-nav {
       flex-direction: column;
       align-items: center;
     }
     .navbar{
-        max-height: 200px;
+        max-height: 100px;
     }
-
+.logo-icon{
+    width: 150px;
+}
  }
 
+ @media (max-width: 500px) {
+    .logo-icon{
+        width: 100px;
+ } }

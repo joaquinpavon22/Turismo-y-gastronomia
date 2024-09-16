@@ -1,0 +1,11 @@
+.error-img img{
+    max-width: 100%;
+    height: auto;
+}
+
+.error-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}

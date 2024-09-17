@@ -23,14 +23,104 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
-      <!-- 404  -->
-    <section class="container">
-        <div class="error-img">
-            <img src="/img/404-Error (1).jpg" alt="" class="img-fluid">
+    <!-- NAVBAR  -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">
+          <img
+            src="img/logo1.png"
+            alt="Logo"
+            class="logo-icon img-fluid"
+            style="max-width: 100px; height: auto"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-center text-center"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Blog.html">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/regiones.html">Regiones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/nosotros.html">Nosotros</a>
+            </li>
+          </ul>
+
+          <form class="d-flex align-items-center" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Buscar
+            </button>
+          </form>
+
+          <ul class="navbar-nav ms-2">
+            <li class="nav-item d-flex align-items-center">
+              <a class="nav-link" href="/login.html" style="font-size: 1.25rem">
+                <i class="fa-solid fa-user"></i>
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
+    </nav>
 
+    <!-- 404  -->
+    <section class="container">
+      <div class="error-img">
+        <img src="/img/404-Error (1).jpg" alt="" class="img-fluid" />
+      </div>
     </section>
-
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-title col-md-4 text-md-left">
+            <p>Turismo con Sabor</p>
+          </div>
+          <div class="footer-social col-md-4 text-center">
+            <a href="#" class="d-inline-block"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="d-inline-block"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="d-inline-block"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+          <div class="footer-copy col-md-4 text-center">
+            <p>&copy;Rolling Code - Web4 - Grupo 5</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!--Script de Bootstrap  -->
     <script

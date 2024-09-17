@@ -23,18 +23,19 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
+    <!-- NAVBAR  -->
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <!-- Icono de usuario a la izquierda -->
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/index.html">
           <img
             src="img/logo1.png"
-            alt="Bootstrap"
-            width="200"
-            height="200"
-            class="logo-icon"
+            alt="Logo"
+            class="logo-icon img-fluid"
+            style="max-width: 100px; height: auto"
           />
         </a>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -47,28 +48,28 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <!-- Contenedor centrado del menú -->
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+        <div
+          class="collapse navbar-collapse justify-content-center text-center"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="/index.html"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="/Blog.html">Blogs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="/regiones.html">Regiones</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Susbcripción</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Nosotros</a>
+              <a class="nav-link" href="/nosotros.html">Nosotros</a>
             </li>
           </ul>
 
-          <!-- Buscador a la derecha -->
-          <form class="d-flex" role="search">
+          <form class="d-flex align-items-center" role="search">
             <input
               class="form-control me-2"
               type="search"
@@ -79,6 +80,14 @@
               Buscar
             </button>
           </form>
+
+          <ul class="navbar-nav ms-2">
+            <li class="nav-item d-flex align-items-center">
+              <a class="nav-link" href="/login.html" style="font-size: 1.25rem">
+                <i class="fa-solid fa-user"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -202,7 +211,7 @@
     </section>
 
     <!--FORM CONTACT  -->
-    <section class=" container contact bg-light py-5" id="contacto">
+    <section class="container contact bg-light py-5" id="contacto">
       <div class="container-lg py-4 justify-content-center">
         <div class="row">
           <div class="col-lg-8 mx-auto">
@@ -220,7 +229,9 @@
                       type="text"
                       name="name"
                       placeholder="Tu nombre"
-                      class="form-control form-control-lg fs-6 border-0 shadow-sm" required minlength="8"
+                      class="form-control form-control-lg fs-6 border-0 shadow-sm"
+                      required
+                      minlength="8"
                     />
                   </div>
                   <div class="col-lg-6 mb-4">
@@ -228,7 +239,9 @@
                       type="email"
                       name="email"
                       placeholder="Tu mail"
-                      class="form-control form-control-lg fs-6 border-0 shadow-sm" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$"
+                      class="form-control form-control-lg fs-6 border-0 shadow-sm"
+                      required
+                      pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,}$"
                     />
                   </div>
                 </div>
@@ -258,7 +271,7 @@
       </div>
     </section>
 
-    <!--REVIEWS SECTION-->
+    <!-- REVIEWS SECTION -->
     <section class="reseñas py-5" id="reseñas">
       <div class="container-lg py-4">
         <div class="row justify-content-center">
@@ -269,84 +282,171 @@
 
         <div class="row justify-content-center">
           <div class="col-lg-8 col-xl-7">
-            <div
-              id="reviewsCarousel"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
+            <div id="reviewsCarousel" class="carousel slide">
               <div class="carousel-inner">
                 <!-- ITEM1 -->
                 <div class="carousel-item active">
                   <div
-                    class="review-item bg-secondary bg-gradient shadow-sm rounded p-4"
+                    class="review-item bg-secondary bg-gradient shadow-sm rounded p-4 position-relative"
                   >
                     <div class="review-author-info d-flex align-items-center">
                       <div class="author ms-3">
-                        <h3 class="fs-6 mb-1 text-white">Lucas Medina</h3>
-                        <p class="text-white m-0">
-                          32 años, San Miguel de Tucumán
-                        </p>
+                        <h3 class="fs-6 mb-1 text-white">Paola Gomez</h3>
+                        <p class="text-white m-0">32 años, Santa Fe</p>
                       </div>
                     </div>
                     <p class="text-white mt-3 text-center mx-5 p-2">
-                      Hola, sin dudas los electricos son los mejores de toda la
-                      provincia y pais, tambien hubiese votado Santa Mila de la
-                      avenida Mate de Luna entre los mejores
+                      Los inmortales es lo mejor, excelente atención, lugar
+                      acogedor, auténtico y riquísimo sabor.
                     </p>
+                    <!-- CONTROLES LATERALES -->
+                    <button
+                      class="carousel-control-prev position-absolute top-50 start-0 translate-middle-y"
+                      type="button"
+                      data-bs-target="#reviewsCarousel"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                        style="
+                          background-color: rgba(0, 0, 0, 0.5);
+                          border-radius: 50%;
+                        "
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next position-absolute top-50 end-0 translate-middle-y"
+                      type="button"
+                      data-bs-target="#reviewsCarousel"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                        style="
+                          background-color: rgba(0, 0, 0, 0.5);
+                          border-radius: 50%;
+                        "
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
                   </div>
                 </div>
                 <!-- ITEM1 -->
 
                 <!-- ITEM2 -->
-                <div class="carousel-item active">
+                <div class="carousel-item">
                   <div
-                    class="review-item bg-secondary bg-gradient shadow-sm rounded p-4"
+                    class="review-item bg-secondary bg-gradient shadow-sm rounded p-4 position-relative"
                   >
                     <div class="review-author-info d-flex align-items-center">
                       <div class="author ms-3">
-                        <h3 class="fs-6 mb-1 text-white">Guadalupe Diaz</h3>
-                        <p class="text-white m-0">28 años, Cordoba</p>
+                        <h3 class="fs-6 mb-1 text-white">Daniela Ruiz</h3>
+                        <p class="text-white m-0">30 años, Tucuman</p>
                       </div>
                     </div>
                     <p class="text-white mt-3 text-center mx-5 p-2">
-                      Tuve la oportunidad de viajar a tucumán, no habia un lugar
-                      feo de sandwich de milanesa, los electricos el tamaño
-                      justo con papas para acompañar. El turco es ideal para
-                      varones, la milanosaurio solo pude comer la mitad, es
-                      literal muy grande. Volveria a Tucumán solo por un
-                      sandwich de milanesa y un achilata
+                      En cada oportunidad que tengo de ir a Buenos Aires, si o
+                      si debo pasar por Guerrin por unas porciones de pizza, lo
+                      super recomiendo, son el sabor perfecto.
                     </p>
+                    <!-- CONTROLES LATERALES -->
+                    <button
+                      class="carousel-control-prev position-absolute top-50 start-0 translate-middle-y"
+                      type="button"
+                      data-bs-target="#reviewsCarousel"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                        style="
+                          background-color: rgba(0, 0, 0, 0.5);
+                          border-radius: 50%;
+                        "
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next position-absolute top-50 end-0 translate-middle-y"
+                      type="button"
+                      data-bs-target="#reviewsCarousel"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                        style="
+                          background-color: rgba(0, 0, 0, 0.5);
+                          border-radius: 50%;
+                        "
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
                   </div>
                 </div>
                 <!-- ITEM2 -->
 
                 <!-- ITEM3 -->
-                <div class="carousel-item active">
+                <div class="carousel-item">
                   <div
-                    class="review-item bg-secondary bg-gradient shadow-sm rounded p-4"
+                    class="review-item bg-secondary bg-gradient shadow-sm rounded p-4 position-relative"
                   >
                     <div class="review-author-info d-flex align-items-center">
                       <div class="author ms-3">
-                        <h3 class="fs-6 mb-1 text-white">Federico Arias</h3>
-                        <p class="text-white m-0">35 años, Buenos Aires</p>
+                        <h3 class="fs-6 mb-1 text-white">Carlos Ramos</h3>
+                        <p class="text-white m-0">27 años, Buenos Aires</p>
                       </div>
                     </div>
                     <p class="text-white mt-3 text-center mx-5 p-2">
-                      Soy un amante de la comida callejera, no puedo no probar
-                      un sandwich de milanesa en cada provincia que voy o una
-                      empanada, a mi criterio regular en tamaño el tamaño de los
-                      electricos, me encanto chacho y no esta entre los mejores
-                      pero si lo votaria al 10 que esta frente a Chacho.
-                      atencion de primera y me encanto la cebollita reogada
+                      Yo soy del interior y por trabajo vivo en Buenos Aires,
+                      salir a disfrutar de la noche en la avenida corrientes y
+                      culminarlo con unas buenas pizzas en los inmortales y las
+                      cuartetas no tiene precio.
                     </p>
+                    <!-- CONTROLES LATERALES -->
+                    <button
+                      class="carousel-control-prev position-absolute top-50 start-0 translate-middle-y"
+                      type="button"
+                      data-bs-target="#reviewsCarousel"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                        style="
+                          background-color: rgba(0, 0, 0, 0.5);
+                          border-radius: 50%;
+                        "
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next position-absolute top-50 end-0 translate-middle-y"
+                      type="button"
+                      data-bs-target="#reviewsCarousel"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                        style="
+                          background-color: rgba(0, 0, 0, 0.5);
+                          border-radius: 50%;
+                        "
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
                   </div>
                 </div>
                 <!-- ITEM3 -->
 
                 <!-- ITEM4 -->
-                <div class="carousel-item active">
+                <div class="carousel-item">
                   <div
-                    class="review-item bg-secondary bg-gradient shadow-sm rounded p-4"
+                    class="review-item bg-secondary bg-gradient shadow-sm rounded p-4 position-relative"
                   >
                     <div class="review-author-info d-flex align-items-center">
                       <div class="author ms-3">
@@ -355,65 +455,100 @@
                       </div>
                     </div>
                     <p class="text-white mt-3 text-center mx-5 p-2">
-                      Mi unico motivo para vivir en tucuman su gastronomia,
-                      tremendo el sandwich de milanesa y el lomito, La atencion
-                      en la barra de los electricos fue de 3 minutos con una
-                      mirinda manzana escarcha, para mi 10 puntos, patata no me
-                      gusto carne dura y fiky un 9.
+                      A mi criterio las pizzas de Banchelato son muy gruesas y
+                      las de kentucky no son la gran cosa, las probé en 3
+                      provincias y regular de sabor. Por lejos la mejor Guerrin
+                      y los inmortales.
                     </p>
+                    <!-- CONTROLES LATERALES -->
+                    <button
+                      class="carousel-control-prev position-absolute top-50 start-0 translate-middle-y"
+                      type="button"
+                      data-bs-target="#reviewsCarousel"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                        style="
+                          background-color: rgba(0, 0, 0, 0.5);
+                          border-radius: 50%;
+                        "
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next position-absolute top-50 end-0 translate-middle-y"
+                      type="button"
+                      data-bs-target="#reviewsCarousel"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                        style="
+                          background-color: rgba(0, 0, 0, 0.5);
+                          border-radius: 50%;
+                        "
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
                   </div>
                 </div>
                 <!-- ITEM4 -->
 
                 <!-- ITEM5 -->
-                <div class="carousel-item active">
+                <div class="carousel-item">
                   <div
-                    class="review-item bg-secondary bg-gradient shadow-sm rounded p-4"
+                    class="review-item bg-secondary bg-gradient shadow-sm rounded p-4 position-relative"
                   >
                     <div class="review-author-info d-flex align-items-center">
                       <div class="author ms-3">
-                        <h3 class="fs-6 mb-1 text-white">Micaela NUñez</h3>
-                        <p class="text-white m-0">28 años, Tucumán</p>
+                        <h3 class="fs-6 mb-1 text-white">Laura Figueroa</h3>
+                        <p class="text-white m-0">29 años, Tucumán</p>
                       </div>
                     </div>
                     <p class="text-white mt-3 text-center mx-5 p-2">
-                      Soy tucumana y puedo decir que el plan perfecto es ir a
-                      comer un sandwich de milanesa, Don pepe flojo en redes
-                      sociales pero riquisimo sandwich cuando andas en el centro
-                      zona tribunales, otro flojo de redes es los electricos
-                      pero no le hace falta son los mejores, y a mi gusto el
-                      turco bajo su nivel en los ultimos años.
+                      Pizzas muy ricas, la masa esponjosa y con mucho queso,
+                      además de su excelente atención en Guerrin.
                     </p>
+                    <!-- CONTROLES LATERALES -->
+                    <button
+                      class="carousel-control-prev position-absolute top-50 start-0 translate-middle-y"
+                      type="button"
+                      data-bs-target="#reviewsCarousel"
+                      data-bs-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                        style="
+                          background-color: rgba(0, 0, 0, 0.5);
+                          border-radius: 50%;
+                        "
+                      ></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button
+                      class="carousel-control-next position-absolute top-50 end-0 translate-middle-y"
+                      type="button"
+                      data-bs-target="#reviewsCarousel"
+                      data-bs-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                        style="
+                          background-color: rgba(0, 0, 0, 0.5);
+                          border-radius: 50%;
+                        "
+                      ></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
                   </div>
                 </div>
                 <!-- ITEM5 -->
               </div>
-
-              <!-- CONTROLES LATERALES -->
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#reviewsCarousel"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#reviewsCarousel"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
             </div>
           </div>
         </div>
@@ -429,9 +564,15 @@
             <p>Turismo con Sabor</p>
           </div>
           <div class="footer-social col-md-4 text-center">
-            <a href="#" class="d-inline-block"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="d-inline-block"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="d-inline-block"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="d-inline-block"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="d-inline-block"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" class="d-inline-block"
+              ><i class="fab fa-instagram"></i
+            ></a>
           </div>
           <div class="footer-copy col-md-4 text-center">
             <p>&copy;Rolling Code - Web4 - Grupo 5</p>

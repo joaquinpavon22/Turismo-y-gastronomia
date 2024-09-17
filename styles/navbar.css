@@ -5,7 +5,14 @@
     top: 0;
     left: 0;
     width: 100%;
+ 
+
 }
+.navbar ul{
+    font-weight: bold;
+  
+}
+
 .navbar-nav{
     flex-grow: 1;
     justify-content: center;
@@ -17,6 +24,7 @@
 .form-control{
     width: 100%;
 }
+
 
 
 

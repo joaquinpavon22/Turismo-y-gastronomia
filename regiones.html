@@ -24,17 +24,18 @@
   </head>
   <body>
     <!-- NAVBAR  -->
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <!-- Icono de usuario a la izquierda -->
         <a class="navbar-brand" href="/index.html">
           <img
             src="img/logo1.png"
-            alt="Bootstrap"
-            class="logo-icon"
-            width="250px"
+            alt="Logo"
+            class="logo-icon img-fluid"
+            style="max-width: 100px; height: auto"
           />
         </a>
+
         <button
           class="navbar-toggler"
           type="button"
@@ -48,32 +49,27 @@
         </button>
 
         <div
-          class="collapse navbar-collapse bg-body-tertiary"
+          class="collapse navbar-collapse justify-content-center text-center"
           id="navbarSupportedContent"
         >
-          <!-- Contenedor centrado del menú -->
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+          <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Regiones</a
+              <a class="nav-link active" aria-current="page" href="/index.html"
+                >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Blogs</a>
+              <a class="nav-link" href="/Blog.html">Blogs</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="/regiones.html">Regiones</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Susbcripción</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Nosotros</a>
+              <a class="nav-link" href="/nosotros.html">Nosotros</a>
             </li>
           </ul>
 
-          <!-- Buscador a la derecha -->
-          <form class="d-flex" role="search">
+          <form class="d-flex align-items-center" role="search">
             <input
               class="form-control me-2"
               type="search"
@@ -81,9 +77,17 @@
               aria-label="Search"
             />
             <button class="btn btn-outline-success" type="submit">
-              <i class="fa-solid fa-magnifying-glass"></i>
+              Buscar
             </button>
           </form>
+
+          <ul class="navbar-nav ms-2">
+            <li class="nav-item d-flex align-items-center">
+              <a class="nav-link" href="/login.html" style="font-size: 1.25rem">
+                <i class="fa-solid fa-user"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -95,7 +99,7 @@
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4">
         <!-- Galería de imágenes -->
         <div class="col">
-          <a href="descripcion-lugar1.html" class="gallery-item d-block">
+          <a href="/404.html" class="gallery-item d-block">
             <img
               src="/img/RegionTafiDV.jpeg"
               alt="TafiDelValle"
@@ -108,7 +112,7 @@
         </div>
 
         <div class="col">
-          <a href="descripcion-lugar2.html" class="gallery-item d-block">
+          <a href="/404.html" class="gallery-item d-block">
             <img
               src="/img/RegionAutodromoTermas.jpeg"
               alt="Autodromo"
@@ -121,7 +125,7 @@
         </div>
 
         <div class="col">
-          <a href="descripcion-lugar3.html" class="gallery-item d-block">
+          <a href="/404.htmll" class="gallery-item d-block">
             <img
               src="/img/RegionTermas.jpg"
               alt="Termas de Rio hondo"
@@ -134,7 +138,7 @@
         </div>
 
         <div class="col">
-          <a href="descripcion-lugar4.html" class="gallery-item d-block">
+          <a href="/404.html" class="gallery-item d-block">
             <img
               src="/img/RegionCafayate.jpeg"
               alt="Cafayate"
@@ -150,7 +154,7 @@
         class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5"
       >
         <div class="col">
-          <a href="descripcion-lugar1.html" class="gallery-item d-block">
+          <a href="/404.htmll" class="gallery-item d-block">
             <img
               src="/img/RegionMollar.jpeg"
               alt="El Mollar"
@@ -163,7 +167,7 @@
         </div>
 
         <div class="col">
-          <a href="descripcion-lugar2.html" class="gallery-item d-block">
+          <a href="/404.html" class="gallery-item d-block">
             <img
               src="/img/RegionQuebradaHumacuaca.jpg"
               alt="La Quebrada"
@@ -176,7 +180,7 @@
         </div>
 
         <div class="col">
-          <a href="descripcion-lugar3.html" class="gallery-item d-block">
+          <a href="/404.html" class="gallery-item d-block">
             <img
               src="/img/RegionSanJavier.jpeg"
               alt="Cerro San Javier"
@@ -189,7 +193,7 @@
         </div>
 
         <div class="col">
-          <a href="descripcion-lugar4.html" class="gallery-item d-block">
+          <a href="/404.html" class="gallery-item d-block">
             <img
               src="/img/RegionTrenDeLasNubes.jfif"
               alt="Tren de las Nubes"
@@ -208,7 +212,7 @@
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4">
         <!-- Galería de imágenes -->
         <div class="col">
-          <a href="descripcion-lugar1.html" class="gallery-item d-block">
+          <a href="/404.html" class="gallery-item d-block">
             <img
               src="/img/RegioCordobaCap.jpeg"
               alt="Cordoba Capital"
@@ -221,7 +225,7 @@
         </div>
 
         <div class="col">
-          <a href="descripcion-lugar2.html" class="gallery-item d-block">
+          <a href="/404.html" class="gallery-item d-block">
             <img
               src="/img/RegionObelisco.jpeg"
               alt="Obelisco"
@@ -234,7 +238,7 @@
         </div>
 
         <div class="col">
-          <a href="descripcion-lugar3.html" class="gallery-item d-block">
+          <a href="/404.html" class="gallery-item d-block">
             <img
               src="/img/RegionPinamar.jpeg"
               alt="Pinamar"
@@ -247,7 +251,7 @@
         </div>
 
         <div class="col">
-          <a href="descripcion-lugar4.html" class="gallery-item d-block">
+          <a href="/404.htmll" class="gallery-item d-block">
             <img
               src="/img/RegionPuertoMadero.jpeg"
               alt="Puerto Madero"
@@ -263,7 +267,7 @@
         class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5"
       >
         <div class="col">
-          <a href="descripcion-lugar1.html" class="gallery-item d-block">
+          <a href="/404.html" class="gallery-item d-block">
             <img
               src="/img/RegionRosario.jpeg"
               alt="El Mollar"
@@ -276,7 +280,7 @@
         </div>
 
         <div class="col">
-          <a href="descripcion-lugar2.html" class="gallery-item d-block">
+          <a href="/404.htmll" class="gallery-item d-block">
             <img
               src="/img/RegionSantaTere.jpeg"
               alt="Santa Teresita"
@@ -289,7 +293,7 @@
         </div>
 
         <div class="col">
-          <a href="descripcion-lugar3.html" class="gallery-item d-block">
+          <a href="/404.htmll" class="gallery-item d-block">
             <img
               src="/img/RegionMarAjo.jpeg"
               alt="Mar de Ajo"
@@ -302,7 +306,7 @@
         </div>
 
         <div class="col">
-          <a href="descripcion-lugar4.html" class="gallery-item d-block">
+          <a href="/404.html" class="gallery-item d-block">
             <img
               src="/img/RegionMarDelPlata.jpeg"
               alt="Mar del Plata"
@@ -321,7 +325,7 @@
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4">
         <!-- Galería de imágenes -->
         <div class="col">
-          <a href="descripcion-lugar1.html" class="gallery-item d-block">
+          <a href="/404.html" class="gallery-item d-block">
             <img src="/img/RegioMendoza.jpeg" alt="Mendoza" class="img-fluid" />
             <div class="gallery-text">
               <p>Mendoza</p>
@@ -330,7 +334,7 @@
         </div>
 
         <div class="col">
-          <a href="descripcion-lugar2.html" class="gallery-item d-block">
+          <a href="/404.html" class="gallery-item d-block">
             <img
               src="/img/RegionGrutas.jpeg"
               alt="Las Grutas"
@@ -343,7 +347,7 @@
         </div>
 
         <div class="col">
-          <a href="descripcion-lugar3.html" class="gallery-item d-block">
+          <a href="/404.html" class="gallery-item d-block">
             <img src="/img/RegionBolson.jpeg" alt="Bolson" class="img-fluid" />
             <div class="gallery-text">
               <p>El Bolson</p>
@@ -352,7 +356,7 @@
         </div>
 
         <div class="col">
-          <a href="descripcion-lugar4.html" class="gallery-item d-block">
+          <a href="/404.htmll" class="gallery-item d-block">
             <img
               src="/img/RegionLangostura.jpeg"
               alt="Villa Langostura"
@@ -368,7 +372,7 @@
         class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5"
       >
         <div class="col">
-          <a href="descripcion-lugar1.html" class="gallery-item d-block">
+          <a href="/404.html" class="gallery-item d-block">
             <img
               src="/img/RegionBariloche.jpeg"
               alt="Bariloche"
@@ -381,7 +385,7 @@
         </div>
 
         <div class="col">
-          <a href="descripcion-lugar2.html" class="gallery-item d-block">
+          <a href="/404.html" class="gallery-item d-block">
             <img
               src="/img/RegionSanLuis.jpeg"
               alt="San Luis"
@@ -394,7 +398,7 @@
         </div>
 
         <div class="col">
-          <a href="descripcion-lugar3.html" class="gallery-item d-block">
+          <a href="/404.html" class="gallery-item d-block">
             <img
               src="/img/RegionSanJuan.jpeg"
               alt="San Juan"
@@ -407,7 +411,7 @@
         </div>
 
         <div class="col">
-          <a href="descripcion-lugar4.html" class="gallery-item d-block">
+          <a href="/404.html" class="gallery-item d-block">
             <img
               src="/img/RegionTrenDeLasNubes.jfif"
               alt="Tren de las Nubes"

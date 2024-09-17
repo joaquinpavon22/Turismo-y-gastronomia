@@ -9,14 +9,12 @@
     background-color: #cacccf;
 }
 
-.section-title{
-    background-color: #cacccf;
-}
 
 
 .lead{
     font-size: 2rem;
 }
+
 
 .about-info img {
     width: 400px;
@@ -34,7 +32,15 @@
     flex-direction: column;
     align-items: center;
 }
+.section-title h1{
 
+    font-weight: bold;
+    background-color: rgba(131, 123, 123, 0.6);
+    color: rgb(2, 1, 1);
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
 .contact{
     display:flex;
     flex-direction: column;

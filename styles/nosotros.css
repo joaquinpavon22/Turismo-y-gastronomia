@@ -5,6 +5,7 @@
 }
 .team-info p{
     font-size: 20px;
+  
 }
 
 .team-img img{
@@ -29,7 +30,14 @@
 }
 
 @media (max-width:800px){
-    .nosotros-text{
+    .info-text{
         font-size: 20px;
+    }
+}
+
+
+@media (max-width:500px){
+    .info-text{
+        font-size: 15px;
     }
 }

@@ -1,0 +1,26 @@
+/* ESTILOS BOTON WHASTAPP */
+/* Estilos para el botón de WhatsApp */
+.whatsapp-button {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    width: 60px; 
+    height: 60px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; 
+    font-size: 24px; 
+    z-index: 1050; 
+  }
+  
+  
+  .whatsapp-button i {
+    color: white;
+  }
+
+  .modal-dialog {
+    max-width: 90%; 
+    margin: 1.75rem auto; 
+  }
+  

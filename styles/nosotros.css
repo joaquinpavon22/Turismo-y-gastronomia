@@ -27,3 +27,9 @@
 .container_flex:has(.img-box:hover) .img-box:not(:hover){
     filter: grayscale(100%) brightness(50%);
 }
+
+@media (max-width:800px){
+    .nosotros-text{
+        font-size: 20px;
+    }
+}

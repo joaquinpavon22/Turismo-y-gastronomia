@@ -48,4 +48,11 @@
     justify-content: center;
 }
 
+.reseñas{
+    margin-bottom: 0;
+    padding-bottom:0 ;
+}
 
+.carousel-item{
+    max-height: 200px;
+}

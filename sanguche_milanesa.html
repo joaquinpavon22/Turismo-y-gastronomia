@@ -49,7 +49,7 @@
         </button>
 
         <div
-          class="collapse navbar-collapse justify-content-center text-center"
+          class="collapse navbar-collapse bg-light bg-body-tertiary justify-content-center text-center"
           id="navbarSupportedContent"
         >
           <ul class="navbar-nav mb-2 mb-lg-0">
@@ -93,7 +93,7 @@
     </nav>
 
     <!--BLOG 1 -->
-    <section class="container about bg-white py-5" id="blog1">
+    <section class="container about bg-white py-5 mt-5" id="blog1">
       <div class="container-lg py-3"></div>
       <!-- TITULO -->
       <div class="row justify-content-center">
@@ -580,6 +580,49 @@
         </div>
       </div>
     </footer>
+    <!-- Botón de WhatsApp -->
+    <button
+      type="button"
+      class="btn btn-success rounded-circle whatsapp-button"
+      data-bs-toggle="modal"
+      data-bs-target="#whatsappModal"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </button>
+
+    <!-- Modal de WhatsApp -->
+    <div
+      class="modal fade"
+      id="whatsappModal"
+      tabindex="-1"
+      aria-labelledby="whatsappModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="whatsappModalLabel">
+              Contáctanos por WhatsApp
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            ¡Estamos aquí para ayudarte! Puedes enviarnos un mensaje a través de
+            WhatsApp.
+          </div>
+          <div class="modal-footer">
+            <a href="/404.html" class="btn btn-success" target="_blank">
+              Enviar Mensaje
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!--Script de Bootstrap  -->
     <script

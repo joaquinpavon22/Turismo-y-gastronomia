@@ -1,0 +1,11 @@
+.body{
+    background: rgb(157, 150, 140);
+    background: linear-gradient(297deg, rgba(157, 150, 140, 1) 0%, rgba(157, 150, 140, 1) 50%, rgba(0, 0, 0, 1) 92%);
+}
+
+.bg{
+    background-image: url("https://images.pexels.com/photos/17431359/pexels-photo-17431359/free-photo-of-carretera-montanas-hombre-desierto.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

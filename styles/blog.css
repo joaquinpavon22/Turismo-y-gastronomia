@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .blog-img{
     width: 100%;
     height: 300px;
@@ -55,4 +56,58 @@
 
 .carousel-item{
     max-height: 200px;
+=======
+.blog-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.blog-articulos {
+  background-color: #cacccf;
+}
+
+.lead {
+  font-size: 2rem;
+}
+
+.about-info img {
+  width: 400px;
+  height: 400px;
+}
+
+.preview-img img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-title h1 {
+  font-weight: bold;
+  background-color: rgba(131, 123, 123, 0.6);
+  color: rgb(2, 1, 1);
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.reseñas {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.carousel-item {
+  max-height: 200px;
+>>>>>>> issues
 }

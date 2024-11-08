@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
 
 
@@ -22,4 +23,23 @@ section{
     section{
         padding-top: 30px;  
     }
+=======
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+section {
+  padding-top: 110px;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding-top: 100px;
+  }
+>>>>>>> issues
 }
